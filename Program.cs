@@ -17,50 +17,50 @@ class Program
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine(Translation.Get("MenuOption1"));
             Console.WriteLine(Translation.Get("MenuOption2"));
-            
+
             bool showHof = hof.HasScores();
-            if (showHof) 
+            if (showHof)
             {
                 Console.WriteLine(Translation.Get("MenuOption3"));
             }
-                
+
             Console.WriteLine(Translation.Get("MenuOption4"));
             Console.WriteLine(Translation.Get("MenuOption5"));
             Console.Write(Translation.Get("SelectOption"));
-            
+
             if (!int.TryParse(Console.ReadLine(), out choice))
             {
                 Console.WriteLine(Translation.Get("InvalidOption"));
                 System.Threading.Thread.Sleep(1000);
                 continue;
             }
-            
+
             switch (choice)
             {
-                case 1: 
-                    HandleNewGame(); 
+                case 1:
+                    HandleNewGame();
                     break;
-                case 2: 
-                    ShowInstruction(); 
+                case 2:
+                    ShowInstruction();
                     break;
-                case 3: 
-                    if (showHof) hof.DisplayMenu(); 
+                case 3:
+                    if (showHof) hof.DisplayMenu();
                     break;
-                case 4: 
-                    HandleSettings(); 
+                case 4:
+                    HandleSettings();
                     break;
-                case 5: 
-                    Console.WriteLine(Translation.Get("ExitGame")); 
+                case 5:
+                    Console.WriteLine(Translation.Get("ExitGame"));
                     break;
-                default: 
-                    Console.WriteLine(Translation.Get("InvalidOption")); 
+                default:
+                    Console.WriteLine(Translation.Get("InvalidOption"));
                     System.Threading.Thread.Sleep(1000);
                     break;
             }
-            
+
         } while (choice != 5);
     }
-    
+
     static void HandleNewGame()
     {
         Console.Clear();
@@ -76,12 +76,12 @@ class Program
         Console.Clear();
         Console.WriteLine(Translation.Get("ChooseMode"));
         Console.Write(Translation.Get("SelectOption"));
-        
+
         int mode;
         if (!int.TryParse(Console.ReadLine(), out mode) || (mode != 1 && mode != 2)) return;
 
         Game game;
-        
+
         if (mode == 2)
         {
             game = new GamePlus(diff);
@@ -113,7 +113,7 @@ class Program
     {
         Console.Clear();
         Console.WriteLine(Translation.Get("Instruction"));
-        Console.WriteLine("\nWpisz 1 aby wrocic do menu: ");
+        Console.WriteLine(Translation.Get("InstructionLeave"));
         Console.ReadLine();
     }
 
