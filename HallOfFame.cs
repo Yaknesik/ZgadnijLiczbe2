@@ -118,16 +118,16 @@ public class HallOfFame
                 for (int i = 0; i < limit; i++)
                 {
                     string prefix = filtered[i].IsNewGamePlus ? "[NG+] " : "";
-                    
+
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine((i + 1) + ". " + prefix + filtered[i].Name + " | Tries: " + filtered[i].Tries + " | Time: " + filtered[i].DurationSeconds + "s");
+                    Console.WriteLine((i + 1) + ". " + prefix + filtered[i].Name + " | " + Translation.Get("HOFTries") + filtered[i].Tries + " | " + Translation.Get("HOFTime") + filtered[i].DurationSeconds + "s");
                     Console.ResetColor();
                 }
             }
 
-            Console.WriteLine("\n[1-3] Switch Diff | [4] Main Menu");
+            Console.WriteLine(Translation.Get("HOFOptions"));
             Console.Write(Translation.Get("SelectOption"));
-            
+
             int choice;
             if (int.TryParse(Console.ReadLine(), out choice))
             {
