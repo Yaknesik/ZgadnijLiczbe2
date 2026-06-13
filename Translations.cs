@@ -17,6 +17,9 @@ public class Translation
             if (key == "MenuOption5") return "5. Wyjscie";
             if (key == "CurrentSettings") return "Aktualne ustawienia: Jezyk: {0} | Zaklady: {1}";
             if (key == "SelectOption") return "Wybierz opcje: ";
+            if (key == "HOFOptions") return "[1-3] Zmien Poziom | [4] Menu Glowne";
+            if (key == "HOFTries") return "Próby: ";
+            if (key == "HOFTime") return "Czas: ";
             if (key == "InvalidOption") return "Nieprawidlowa opcja! Sprobuj ponownie.";
             if (key == "ExitGame") return "Wyjscie z gry.";
             if (key == "ChooseDifficulty") return "Wybierz poziom trudnosci:";
@@ -44,6 +47,7 @@ public class Translation
             if (key == "ConfirmClear") return "Czy na pewno chcesz wyczyscic wyniki? (T/N): ";
             if (key == "HoFCleared") return "Hall of Fame zostalo wyczyszczone.";
             if (key == "Instruction") return "INSTRUKCJA:\nZgadnij liczbe wybrana przez komputer.\nW trybie NG+ liczba zmienia sie co 6-8 strzalow.\nW Hall of Fame liczy sie najpierw liczba prob, a potem czas!";
+            if (key == "InstructionLeave") return "\nWpisz 1 aby wrocic do menu: ";
         }
         else
         {
@@ -55,6 +59,9 @@ public class Translation
             if (key == "MenuOption5") return "5. Exit";
             if (key == "CurrentSettings") return "Current settings: Lang: {0} | Betting: {1}";
             if (key == "SelectOption") return "Select option: ";
+            if (key == "HOFOptions") return "[1-3] Switch Diff | [4] Main Menu";
+            if (key == "HOFTries") return "Tries: ";
+            if (key == "HOFTime") return "Time: ";
             if (key == "InvalidOption") return "Invalid option! Try again.";
             if (key == "ExitGame") return "Exiting game.";
             if (key == "ChooseDifficulty") return "Choose difficulty level:";
@@ -82,6 +89,7 @@ public class Translation
             if (key == "ConfirmClear") return "Are you sure you want to clear records? (Y/N): ";
             if (key == "HoFCleared") return "Hall of Fame has been cleared.";
             if (key == "Instruction") return "INSTRUCTION:\nGuess the secret number chosen by computer.\nIn NG+ mode, the number shifts every 6-8 shots.\nIn Hall of Fame, lower tries win; ties are broken by shorter time!";
+            if (key == "InstructionLeave") return "\nType 1 to back to main menu: ";
         }
         return key;
     }
