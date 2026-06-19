@@ -48,6 +48,7 @@ public class Translation
             if (key == "HoFCleared") return "Hall of Fame zostalo wyczyszczone.";
             if (key == "Instruction") return "INSTRUKCJA:\nZgadnij liczbe wybrana przez komputer.\nW trybie NG+ liczba zmienia sie co 6-8 strzalow.\nW Hall of Fame liczy sie najpierw liczba prob, a potem czas!";
             if (key == "InstructionLeave") return "\nWpisz 1 aby wrocic do menu: ";
+            if (key == "InvalidName") return "Niepoprawnie wpisano imie (Puste pole)! Prosze ponownie wpisac swoje imie.";
         }
         else
         {
@@ -90,6 +91,7 @@ public class Translation
             if (key == "HoFCleared") return "Hall of Fame has been cleared.";
             if (key == "Instruction") return "INSTRUCTION:\nGuess the secret number chosen by computer.\nIn NG+ mode, the number shifts every 6-8 shots.\nIn Hall of Fame, lower tries win; ties are broken by shorter time!";
             if (key == "InstructionLeave") return "\nType 1 to back to main menu: ";
+            if (key == "InvalidName") return "Invalid name entered (Empty field)! Please enter your name again.";
         }
         return key;
     }
